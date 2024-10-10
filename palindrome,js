@@ -1,0 +1,12 @@
+const isPalindrome = (str) => {
+  const reversedString = str.split('').reverse().join('');
+  if(str === reversedString) return str + " is a Palindrome";
+  else return str + " is not a Palindrome"
+}
+
+const result = isPalindrome("racecar");
+
+const result2 = isPalindrome("hacktoberfest");
+
+console.log(result)       //Palindrome
+console.log(result2)     // not Palindrome
